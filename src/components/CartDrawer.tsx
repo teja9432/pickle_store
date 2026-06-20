@@ -151,7 +151,7 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
       {/* STEP PROGRESS BAR */}
       {step !== 'cart' && (
         <Box sx={{ width: '100%', p: 2, backgroundColor: '#F8FAFC', borderBottom: '1px solid #E2E8F0' }}>
-          <Stepper activeStep={step === 'shipping' ? 0 : 1} alternativeLabel size="small">
+          <Stepper activeStep={step === 'shipping' ? 0 : 1} alternativeLabel>
             <Step>
               <StepLabel>Delivery Address</StepLabel>
             </Step>
